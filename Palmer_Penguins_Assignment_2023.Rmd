@@ -6,42 +6,6 @@ date: "2023-11-22"
 
 # **Palmer Penguins Assignment 2023**
 
-Install and load necessary packages
-
-```{r}
-install.packages("palmerpenguins")
-install.packages("ggplot2")
-install.packages("janitor")
-install.packages("dplyr")
-library(palmerpenguins)
-library(ggplot2)
-library(janitor)
-library(dplyr)
-
-```
-
-**Question 1** (Q1a) Creating a figure using the Palmer Penguin data set that is correct but badly communicates the data
-
-```{r}
-ggplot(data=penguins,
-       aes(x=bill_length_mm,
-           y=flipper_length_mm), colour=species)+
-  geom_point(size=15)+ #increasing the size of points
-  scale_x_reverse() + #reversing the x axis
-  labs(x="Bill Length",
-       y="Flipper Length")
-  
-```
-
-(Q1b) Write about how your design choices mislead the reader about the underlying data (200-300 words)
-
-(A) There are four basic rules for data visualisation and my poorly drawn graph violates all of these principles. Here is how:
-
--   Showing the data - the data is hidden because the data is over-plotted and the points are too large. Due to this, it is difficult to see the individual points.
--   Seeing patterns - patterns are difficult to see because the points are too large and are plotted one on top of the other (over-plotted). Additionally, the x axis has been reversed which makes it difficult to see the true pattern
--   Represent magnitudes honestly - due to over-plotting, it is difficult to see the magnitudes as points are obscured
--   Draw graphical elements clearly - graphical elements are not drawn clearly. The points are too large and there is no title. Additionally, the data had not been cleaned appropriately beforehand.
-
 **Question 2** (Q1a) Write a data analysis pipeline in your .rmd RMarkdown file. You should be aiming to write a clear explanation of the steps as well as clear code
 
 *Introduction*
