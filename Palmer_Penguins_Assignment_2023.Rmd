@@ -105,7 +105,7 @@ ggplot(data = cleaned_penguins, aes(x = species, y = flipper_length_mm, fill = s
 
 *Discussion:*
 The coefficient table demonstrate that the mean flipper length for: Adelie penguins is 189.954 mm, Chinstrap penguins is 195.824 mm, and Gentoo penguins is 217.187 mm. Ecologically, Gentoo penguins are deep divers whereas Adelie and Chinstrap penguins are shallow divers. This behavioural segregation appears to be anatomically reflected; with Gentoo penguinis having longer flipper lengths to support them in deeper swimming (Trivelpiece et al 1987).
-The adjusted R-squred value of 0.777 indicates that 78% of the variation in the dataset is explained by differences between species. This is high for biological data.
+The adjusted R-squared value of 0.777 indicates that 78% of the variation in the dataset is explained by differences between species. This is high for biological data.
 
 The ANOVA table shows a p value of less than 0.05. This shows that there is evidence to reject the null hypothesis because our p-value is less than 0.05 (conventional alpha level). This result is interpreted as: at least one of the species of penguin differs from at least one other species of penguin.
 
