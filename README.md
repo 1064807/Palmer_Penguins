@@ -32,7 +32,9 @@ ggplot(data=penguins,
        y="Flipper Length")
 ```
 </pre>
-  
+
+![Bad Graph](https://github.com/1064807/Palmer_Penguins/blob/7d045d04aec7e6ca3584dfc73f8400d965ab52c4/Figures/bad_graph.png)
+
 (Q1b) Write about how your design choices mislead the reader about the underlying data (200-300 words)
 
 There are four basic rules for data visualisation and my poorly drawn graph violates all of these principles. Here is how:
@@ -88,6 +90,8 @@ ggplot(data = cleaned_penguins, aes(x = species, y = flipper_length_mm)) +
 ```
 </pre>
 
+![Exploratory Graph - Jitterplot](https://github.com/1064807/Palmer_Penguins/blob/7d045d04aec7e6ca3584dfc73f8400d965ab52c4/Figures/jitter_plot.png)
+
 __Hypothesis:__
 
 H0: There is no difference in mean flipper length between species
@@ -137,9 +141,8 @@ ggplot(data = cleaned_penguins, aes(x = species, y = flipper_length_mm, colour =
   scale_color_manual(values = c("darkorange", "darkgreen", "blue3")) +  # Set custom colors
   labs(title = "Distribution of Flipper Lengths by Species",
        x = "Penguin Species", y = "Flipper Length (mm)") +
-  theme_minimal()  
-
-
+  theme_minimal()         
+ 
 {r Interactive box plot for species and flipper length}
 #Making an Interactive Box plot
 boxplot <- ggplot(data = cleaned_penguins, aes(x = species, y = flipper_length_mm, color = species, alpha = 0.8)) +
@@ -159,6 +162,8 @@ interactive_boxplot
 #Viewers can interact with the plot by rolling over elements to highlight and identify individual points
 ```
 </pre>
+
+![Box Plot - Non-Interactive](https://github.com/1064807/Palmer_Penguins/blob/7d045d04aec7e6ca3584dfc73f8400d965ab52c4/Figures/non-interactive_boxplot.png)
 
 An alternative visualisation method is the violin plot. Violin plots can also be used to visualise the results of the ANOVA as they show the distribution of the data along with the summary statistics and are useful for comparing different groups, which in this case is species.
 
@@ -193,6 +198,8 @@ interactive_violin
 #Viewers can interact with the plot by rolling over elements to highlight and identify individual points
   ```
 </pre>
+
+![Box Plot - Non-Interactive](https://github.com/1064807/Palmer_Penguins/blob/7d045d04aec7e6ca3584dfc73f8400d965ab52c4/Figures/non-interactive_violinplot.png)
 
 __Discussion:__
 
