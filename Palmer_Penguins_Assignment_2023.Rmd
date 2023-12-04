@@ -6,11 +6,8 @@ date: "2023-11-22"
 ---
 
 # **Palmer Penguins Assignment 2023- Candidate Number: 1064807**
-install.packages("palmerpenguins")
 
 Install and load necessary packages
-
-install.packages("palmerpenguins")
 
 ```{r Installing and loading necessary packages}
 library(palmerpenguins)
