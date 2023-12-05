@@ -217,7 +217,7 @@ These results make biological sense as different species have different anatomic
 
 __Conclusion:__
 
-Based on the results and analysis, we can conclude that flipper length varies between species significantly. This intraspecific variation is biologically coherent as ecological discrepencies between species lead to anatomical adaptations and differences. In order of shortest to longest flipper length, the species are: Adelie, Chinstrap, and Gentoo.
+Based on the results and analysis, we can conclude that flipper length varies between species significantly. This interpecific variation is biologically coherent as ecological discrepencies between species lead to anatomical adaptations and differences. In order of shortest to longest flipper length, the species are: Adelie, Chinstrap, and Gentoo.
 
 __References:__
 
