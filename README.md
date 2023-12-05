@@ -6,6 +6,7 @@ R.md RMarkdown file for Q1 and 2 🔗: https://github.com/1064807/Palmer_Penguin
 
 RPubs link of script 🔗: https://rpubs.com/OXF1064807/1125408
 
+__*Question 1: Data Visualisation for Science Communication*__ and __*Question 2: Data Pipeline*__ below Question 3's answers
 
 __*Question 3: Open Science*__
 
@@ -43,8 +44,6 @@ I disagree with the suggestion of removing the names of chunks. I feel that havi
 *What did you learn about writing code for other people?*
 
 From writing code for other people, I learnt the importance of clarity, readability and reproducibility. With clear documentation, consistency in coding style, effective organisation and structure, I aimed to make my code understandable and reproducible by other people. It was important to to remember that my code must be computer and human readable by all computers and human (not just my machine and me!). By making my code available on GitHub (a Version Control platform), I faciliated the sharing and collaboration of my code. In doing so, I was open to feedback from others so I can continuously improve my coding ability and style ot make it easier for other people to understand and use. 
-
-__*Question 1: Data Visualisation for Science Communication*__ and __*Question 2: Data Pipeline*__ below:
 
 Please see the following for embedded code and comments for Q1-2 (note that to interact with the interactive plots, use the RPub link please):
 
