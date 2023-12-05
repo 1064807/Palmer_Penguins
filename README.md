@@ -71,6 +71,8 @@ cleaned_penguins <- penguins[complete.cases(penguins$species, penguins$flipper_l
 
 # Check the cleaned dataset
 summary(is.na(cleaned_penguins))
+
+#Cleaning data is important because missing values can lead to incomplete or inaccurate analyses. Removing NAs ensures that the data is compatible with the functions used in subsequent analyses, preventing potential errors or misinterpretations.
 ```
 </pre>
 
