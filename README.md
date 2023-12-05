@@ -100,6 +100,9 @@ The data must first be cleaned appropriately.
 
 <pre>
 ```r
+       source("functions/Functions.R")
+cleaned_penguins <- clean_penguins_data(penguins)
+       
 {r Cleaning the data}
 # View the structure of the dataset
 str(penguins)
