@@ -45,7 +45,7 @@ I disagree with the suggestion of removing the names of chunks. I feel that havi
 
 From writing code for other people, I learnt the importance of clarity, readability and reproducibility. With clear documentation, consistency in coding style, effective organisation and structure, I aimed to make my code understandable and reproducible by other people. It was important to to remember that my code must be computer and human readable by all computers and human (not just my machine and me!). By making my code available on GitHub (a Version Control platform), I faciliated the sharing and collaboration of my code. In doing so, I was open to feedback from others so I can continuously improve my coding ability and style ot make it easier for other people to understand and use. 
 
-Please see the following for embedded code and comments for Q1-2 (note that to interact with the interactive plots, use the RPub link please):
+Please see the following for embedded code and comments for __*Question 1-2*__ (note that to interact with the interactive plots, use the RPub link please):
 
 Install and load necessary packages
 
