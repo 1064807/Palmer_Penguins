@@ -4,7 +4,7 @@ Candidate Number: 1064807
 
 R.md RMarkdown file for Q1 and 2 🔗: https://github.com/1064807/Palmer_Penguins/blob/215e06b42c1a525b1c564ff3facbf2eef47a7156/Palmer_Penguins_Assignment_2023.Rmd
 
-RPubs link of script 🔗: http://rpubs.com/OXF1064807/1124788
+RPubs link of script 🔗: http://rpubs.com/OXF1064807/1124801
 
 Also see below for embedded code and comments:
 
