@@ -6,7 +6,7 @@ R.md RMarkdown file for Q1 and 2 🔗: https://github.com/1064807/Palmer_Penguin
 
 RPubs link of script 🔗: http://rpubs.com/OXF1064807/1124805
 
-Also see below for embedded code and comments:
+Also see below for embedded code and comments (note that to interact with the interactive plots, use the RPub link please):
 
 
 Install and load necessary packages
