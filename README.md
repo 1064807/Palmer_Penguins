@@ -6,8 +6,40 @@ R.md RMarkdown file for Q1 and 2 🔗: https://github.com/1064807/Palmer_Penguin
 
 RPubs link of script 🔗: http://rpubs.com/OXF1064807/1124805
 
-Also see below for embedded code and comments (note that to interact with the interactive plots, use the RPub link please):
 
+__*Question 3: Open Science*__
+
+(3a) Here is the link to my GitHub repo: <https://github.com/1064807/Palmer_Penguins.git>
+
+(3b) Here is my partner's link to their GitHub repo: <https://github.com/1065094/reprodresearch.git>
+
+(3c) *Reflect on your experience running their code*
+
+*What elements of your partner's code helped you to understand their data pipeline?*
+
+The code is full of useful comments that provide explanations for each step. This greatly assisted my understanding of the purpose and logic behind different parts and sections of the code. Additionally, the use of functions for different steps in the data cleaning made the code easy to follow so aided my understanding of their data pipeline. Detailed comments for the exploratory figures and the general data exploration (e.g. comments on the dataset structure and content) enhanced my understanding of the dataset within the data pipeline. The detailed and thorough explanations of the statistical tests, outputs, and interpretations significantly contributed to my understanding of the data pipeline. My favourite element of the code is the inclusion of interactive elements. The incorporation of interactive elements in the figures (sliders, buttons) provides flexibility in exploring the data and gaining insights interactively. Overall, my partner's code is well-structured with detailed comments that greatly contributed to my understanding of their data pipeline.
+
+*Did it run? Did you need to fix anything?*
+
+The code is well-structured and executed without any errors. The only suggestion I have is the code for the slider in Fig 1A. Once you slide to one species, the graph can no longer reset to include all three species. This small fix would make the graph more user-friendly.
+
+*What suggestions would you make for improving their code to make it more understandable or reproducible, and why?*
+
+Despite the informativeness of their comments, I would recommend having additional information in the comments. For example, they could have included data types for each variable (particularly the ones under investigation). They could have mentioned the assumptions of ANOVA in the Statistical Methods section and how these assumptions may have been violated. Interpretations and detailed justifications of the 'Residuals vs Fitted' and 'QQ plot' would have also made the code more understandable. Additionally, to specifically improve reproducibility, my partner could have specified the versions of packages they used. This ensures that users running the code have the same package versions as my partner did when they wrote the code. The organisation of code into chunks with markdown headings would have also made the code easier to navigate through.
+
+*If you needed to alter your partner's figure using their code, do you think that would be easy or difficult, and why?*
+
+Figures would be easy to alter because the code structure and comments make it understandable. The comments guide me through the relevant sections of the code, from aesthetic properties and appearance to variables and dataset. Therefore, the modification of figures would be relatively easy. Perhaps a little more detail in the comments for the interactive figures would make them easier to alter.
+
+(3d) *Reflect on your own code based on your experience with your partner's code and their review of yours.*
+
+*What improvements did they suggest, and do you agree?*
+
+*What did you learn about writing code for other people?*
+
+__*Question 1: Data Visualisation for Science Communication*__ and __*Question 2: Data Pipeline*__ below:
+
+Please see the following for embedded code and comments for Q1-2 (note that to interact with the interactive plots, use the RPub link please):
 
 Install and load necessary packages
 
@@ -22,7 +54,7 @@ library(plotly) #for interactive plots
 ```
 </pre>
 
-__*Question 1 (Q1a) Creating a figure using the Palmer Penguin data set that is correct but badly communicates the data*__
+(Q1a) *Creating a figure using the Palmer Penguin data set that is correct but badly communicates the data*
 
 <pre>
 ```r
@@ -40,7 +72,7 @@ ggplot(data=penguins,
 
 ![Bad Graph](https://github.com/1064807/Palmer_Penguins/blob/7d045d04aec7e6ca3584dfc73f8400d965ab52c4/Figures/bad_graph.png)
 
-(Q1b) Write about how your design choices mislead the reader about the underlying data (200-300 words)
+(Q1b) *Write about how your design choices mislead the reader about the underlying data*
 
 There are four basic rules for data visualisation and my poorly drawn graph violates all of these principles. Here is how:
 
@@ -52,7 +84,7 @@ Represent magnitudes honestly - due to over-plotting, it is difficult to see the
 
 Draw graphical elements clearly - graphical elements are not drawn clearly. The points are too large and there is no title. Additionally, the data had not been cleaned appropriately beforehand.
 
-__*Question 2 (Q1a) Write a data analysis pipeline in your .rmd RMarkdown file. You should be aiming to write a clear explanation of the steps as well as clear code*__
+__*Question 2: Write a data analysis pipeline in your .rmd RMarkdown file. You should be aiming to write a clear explanation of the steps as well as clear code*__
 
 __Introduction__
 
