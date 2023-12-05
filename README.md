@@ -34,8 +34,15 @@ Figures would be easy to alter because the code structure and comments make it u
 (3d) *Reflect on your own code based on your experience with your partner's code and their review of yours.*
 
 *What improvements did they suggest, and do you agree?*
+One suggestion was to either justify or remove the density function on the interactive violin plot. Although they found the interaction of the points to be very useful in understanding the data, they found it hard to see how the density provides sufficient information and this was not  mentioned within the comments. Another suggestion of theirs was to remove the names of chunks within the {r} so the markdown can run all at once. They suggested that it might be useful to have a few more comments on the interpretation of the ANOVA or steps taken in genera to make it more understandable for someone who may not be from a biological background. They also suggested the use of an AIC to justify the use of the ANOVA.
+
+I agree largely with their suggestions - particularly the use of an AIC. The Akaike Information Criterion (AIC) is a mathematical method for evaluating how well a model fits the data it was generated from. In statistics, AIC is used to compare different possible models and determine which one is the best fit for the data. Conducting an AIC would justify my choice of model so would make it easier for users to understand, and subsequently reproduce, my analysis.
+
+I disagree with the suggestion of removing the names of chunks. I feel that having named chunks adds a necessry element of code organisation and makes navigation easier.
 
 *What did you learn about writing code for other people?*
+
+From writing code for other people, I learnt the importance of clarity, readability and reproducibility. With clear documentation, consistency in coding style, effective organisation and structure, I aimed to make my code understandable and reproducible by other people. It was important to to remember that my code must be computer and human readable by all computers and human (not just my machine and me!). By making my code available on GitHub (a Version Control platform), I faciliated the sharing and collaboration of my code. In doing so, I was open to feedback from others so I can continuously improve my coding ability and style ot make it easier for other people to understand and use. 
 
 __*Question 1: Data Visualisation for Science Communication*__ and __*Question 2: Data Pipeline*__ below:
 
