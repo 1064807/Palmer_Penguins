@@ -9,7 +9,7 @@ RPubs link of script 🔗: http://rpubs.com/OXF1064807/1124805
 
 __*Question 3: Open Science*__
 
-(3a) Here is the link to my GitHub repo: <https://rpubs.com/OXF1064807/1125408>
+(3a) Here is the link to my GitHub repo: https://rpubs.com/OXF1064807/1125408>](https://github.com/1064807/Palmer_Penguins.git
 
 (3b) Here is my partner's link to their GitHub repo: <https://github.com/1065094/reprodresearch.git>
 
