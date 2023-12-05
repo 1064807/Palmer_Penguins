@@ -67,6 +67,8 @@ cleaned_penguins <- penguins[complete.cases(penguins$species, penguins$flipper_l
 
 # Check the cleaned dataset
 summary(is.na(cleaned_penguins))
+
+##Cleaning data is important because missing values can lead to incomplete or inaccurate analyses. Removing NAs ensures that the data is compatible with the functions used in subsequent analyses, preventing potential errors or misinterpretations.
 ```
 
 Secondly, the data must be explored. This can be achieved by creating an exploratory figure
@@ -82,7 +84,6 @@ ggplot(data = cleaned_penguins, aes(x = species, y = flipper_length_mm)) +
        x="Species",
        y="Flipper Length (mm)")+
   scale_color_manual(values = c("darkorange","darkgreen","blue3"))
-
 ```
 
 *Hypothesis:*
@@ -194,7 +195,7 @@ These results make biological sense as different species have different anatomic
 
 *Conclusion:*
 
-Based on the results and analysis, we can conclude that flipper length varies between species significantly. This intraspecific variation is biologically coherent as ecological discrepencies between species lead to anatomical adaptations and differences. In order of shortest to longest flipper length, the species are: Adelie, Chinstrap, and Gentoo.
+Based on the results and analysis, we can conclude that flipper length varies between species significantly. This interspecific variation is biologically coherent as ecological discrepencies between species lead to anatomical adaptations and differences. In order of shortest to longest flipper length, the species are: Adelie, Chinstrap, and Gentoo.
 
 *References:*
 
