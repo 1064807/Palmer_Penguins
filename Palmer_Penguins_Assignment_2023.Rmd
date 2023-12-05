@@ -21,7 +21,7 @@ library(plotly) #for interactive plots
 **Question 1** (Q1a) Creating a figure using the Palmer Penguin data set that is correct but badly communicates the data
 
 ```{r Creating poor figure - scatter graph (from hell!) for bill length and flipper length}
-#plotting a scatter graph for bill length (x axis) against flipper length (y axis). High point size of 30 and reversed x axis
+#Plotting a scatter graph for bill length (x axis) against flipper length (y axis). High point size of 30 and reversed x axis
 ggplot(data=penguins,
        aes(x=bill_length_mm,
            y=flipper_length_mm), colour=species)+
@@ -49,12 +49,6 @@ The data set contains size measurements for three species of penguins found on t
 
 The data must first be cleaned appropriately.
 
-```{r}
-source("functions/Functions.R")
-cleaned_penguins <- clean_penguins_data(penguins)
-```
-
-
 ```{r Cleaning the data}
 # View the structure of the dataset
 str(penguins)
@@ -68,7 +62,7 @@ cleaned_penguins <- penguins[complete.cases(penguins$species, penguins$flipper_l
 # Check the cleaned dataset
 summary(is.na(cleaned_penguins))
 
-##Cleaning data is important because missing values can lead to incomplete or inaccurate analyses. Removing NAs ensures that the data is compatible with the functions used in subsequent analyses, preventing potential errors or misinterpretations.
+#Cleaning data is important because missing values can lead to incomplete or inaccurate analyses. Removing NAs ensures that the data is compatible with the functions used in subsequent analyses, preventing potential errors or misinterpretations.
 ```
 
 Secondly, the data must be explored. This can be achieved by creating an exploratory figure
@@ -84,6 +78,7 @@ ggplot(data = cleaned_penguins, aes(x = species, y = flipper_length_mm)) +
        x="Species",
        y="Flipper Length (mm)")+
   scale_color_manual(values = c("darkorange","darkgreen","blue3"))
+
 ```
 
 *Hypothesis:*
@@ -204,3 +199,41 @@ Gorman KB, Williams TD, Fraser WR (2014). **Ecological sexual dimorphism and env
 Tarroux, A., Lydersen, C., Trathan, P. N., & Kovacs, K. M. (2018). **Temporal variation in trophic relationships among three congeneric penguin species breeding in sympatry.** Ecology and evolution, 8(7), 3660--3674. <https://doi.org/10.1002/ece3.3937>
 
 Trivelpiece, W. Z., Trivelpiece, S. G., & Volkman, N. J. (1987). **Ecological Segregation of Adelie, Gentoo, and Chinstrap Penguins at King George Island, Antarctica**. Ecology, 68(2), 351--361. <https://doi.org/10.2307/1939266>
+
+**Question 3**
+
+3a) Here is the link to my GitHub repo: <https://github.com/1064807/Palmer_Penguins.git>
+
+3b) Here is my partner's link to their GitHub repo: <https://github.com/1065094/reprodresearch.git>
+
+3c) *Reflect on your experience running their code*
+
+*What elements of your partner's code helped you to understand their data pipeline?*
+
+The code is full of useful comments that provide explanations for each step. This greatly assisted my understanding of the purpose and logic behind different parts and sections of the code. Additionally, the use of functions for different steps in the data cleaning made the code easy to follow so aided my understanding of their data pipeline. Detailed comments for the exploratory figures and the general data exploration (e.g. comments on the dataset structure and content) enhanced my understanding of the dataset within the data pipeline. The detailed and thorough explanations of the statistical tests, outputs, and interpretations significantly contributed to my understanding of the data pipeline. My favourite element of the code is the inclusion of interactive elements. The incorporation of interactive elements in the figures (sliders, buttons) provides flexibility in exploring the data and gaining insights interactively. Overall, my partner's code is well-structured with detailed comments that greatly contributed to my understanding of their data pipeline.
+
+*Did it run? Did you need to fix anything?*
+
+The code is well-structured and executed without any errors. The only suggestion I have is the code for the slider in Fig 1A. Once you slide to one species, the graph can no longer reset to include all three species. This small fix would make the graph more user-friendly.
+
+*What suggestions would you make for improving their code to make it more understandable or reproducible, and why?*
+
+Despite the informativeness of their comments, I would recommend having additional information in the comments. For example, they could have included data types for each variable (particularly the ones under investigation). They could have mentioned the assumptions of ANOVA in the Statistical Methods section and how these assumptions may have been violated. Interpretations and detailed justifications of the 'Residuals vs Fitted' and 'QQ plot' would have also made the code more understandable. Additionally, to specifically improve reproducibility, my partner could have specified the versions of packages they used. This ensures that users running the code have the same package versions as my partner did when they wrote the code. The organisation of code into chunks with markdown headings would have also made the code easier to navigate through.
+
+*If you needed to alter your partner's figure using their code, do you think that would be easy or difficult, and why?*
+
+Figures would be easy to alter because the code structure and comments make it understandable. The comments guide me through the relevant sections of the code, from aesthetic properties and appearance to variables and dataset. Therefore, the modification of figures would be relatively easy. Perhaps a little more detail in the comments for the interactive figures would make them easier to alter.
+
+3d) *Reflect on your own code based on your experience with your partner's code and their review of yours.*
+
+*What improvements did they suggest, and do you agree?*
+
+One suggestion was to either justify or remove the density function on the interactive violin plot. Although they found the interaction of the points to be very useful in understanding the data, they found it hard to see how the density provides sufficient information and this was not mentioned within the comments. Another suggestion of theirs was to remove the names of chunks within the {r} so the markdown can run all at once. They suggested that it might be useful to have a few more comments on the interpretation of the ANOVA or steps taken in genera to make it more understandable for someone who may not be from a biological background. They also suggested the use of an AIC to justify the use of the ANOVA.
+
+I agree largely with their suggestions - particularly the use of an AIC. The Akaike Information Criterion (AIC) is a mathematical method for evaluating how well a model fits the data it was generated from. In statistics, AIC is used to compare different possible models and determine which one is the best fit for the data. Conducting an AIC would justify my choice of model so would make it easier for users to understand, and subsequently reproduce, my analysis.
+
+I disagree with the suggestion of removing the names of chunks. I feel that having named chunks adds a necessry element of code organisation and makes navigation easier.
+
+*What did you learn about writing code for other people?*
+
+From writing code for other people, I learnt the importance of clarity, readability and reproducibility. With clear documentation, consistency in coding style, effective organisation and structure, I aimed to make my code understandable and reproducible by other people. It was important to to remember that my code must be computer and human readable by all computers and human (not just my machine and me!). By making my code available on GitHub (a Version Control platform), I faciliated the sharing and collaboration of my code. In doing so, I was open to feedback from others so I can continuously improve my coding ability and style ot make it easier for other people to understand and use.
