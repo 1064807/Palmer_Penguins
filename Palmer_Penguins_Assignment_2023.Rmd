@@ -7,6 +7,8 @@ date: "2023-11-22"
 
 # **Palmer Penguins Assignment 2023- Candidate Number: 1064807**
 
+This R notebook aims to explore the Palmer Penguins dataset using data visualisation techniques and statistical analysis. The palmerpenguins package contains two datasets: 'penguins' (simplified) and 'penguins_raw' (contains all variables). I will be using 'penguins'. Both datasets contain data for 344 penguins. There are 3 different species of penguins in this dataset, collected from 3 islands in the Palmer Archipelago, Antarctica. Below are my answers to the questions of the Assignmnet.
+
 Install and load necessary packages
 
 ```{r Installing and loading necessary packages}
@@ -16,6 +18,11 @@ library(janitor)
 library(dplyr)
 library(plotly) #for interactive plots
 
+```
+
+```{r}
+penguins
+head(penguins)
 ```
 
 **Question 1** (Q1a) Creating a figure using the Palmer Penguin data set that is correct but badly communicates the data
