@@ -6,6 +6,8 @@ R.md RMarkdown file for Q1 and 2 🔗: https://github.com/1064807/Palmer_Penguin
 
 RPubs link of script 🔗: https://rpubs.com/OXF1064807/1125408
 
+This R notebook aims to explore the Palmer Penguins dataset using data visualisation techniques and statistical analysis. The palmerpenguins package contains two datasets: 'penguins' (simplified) and 'penguins_raw' (contains all variables). I will be using 'penguins'. Both datasets contain data for 344 penguins. There are 3 different species of penguins in this dataset, collected from 3 islands in the Palmer Archipelago, Antarctica. Below are my answers to the questions of the Assignmnet.
+
 __*Question 1: Data Visualisation for Science Communication*__ and __*Question 2: Data Pipeline*__ below Question 3's answers
 
 __*Question 3: Open Science*__
